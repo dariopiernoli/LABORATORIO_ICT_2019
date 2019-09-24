@@ -23,7 +23,7 @@
              
               
                   <p style="padding-top:25px">Nome:<input value="${contact.nome}" type="text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   Cognome:<input type="text"></p>
+                   Cognome:<input value="${contact.cognome}" type="text" ></p>
               
               <p style="padding-top:25px">Denominazione:<input value="${contact.denominazione}" type="text"></p>
         
@@ -44,6 +44,6 @@
         
         </div>    
     
-    
+ </form>   
 </body>
 </html>

@@ -18,12 +18,12 @@
         </tr>
       </thead>
       <tbody>
-        <c:forEach var="tipospedizione" items="${tipospedizioni}">
+        <c:forEach var="spedizione" items="${tipospedizioni}">
           <tr>
-            <td><c:out value="${contact.tipospedizione}"/></td>
+            <td><c:out value="${contact.spedizione}"/></td>
             <td><c:out value="${contact.descrizione}"/></td>
-            <td><a href="/tipospedizioni/get?id=<c:out value="${contact.id}"/>&azione=update">Modifica</a></td>
-            <td><a href="/tipospedizioni/delete?id=<c:out value="${contact.id}"/>&azione=delete">Cancella</a></td>
+            <td><a href="/tipospedizioni/get?id=<c:out value="${contact.id}"/><&azione="update">Modifica</a></td>
+            <td><a href="/tipospedizioni/delete?id=<c:out value="${contact.id}"/><&azione="delete">Cancella</a></td>
           </tr>
         </c:forEach>
       </tbody>

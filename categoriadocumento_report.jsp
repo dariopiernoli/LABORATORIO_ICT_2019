@@ -18,12 +18,12 @@
         </tr>
       </thead>
       <tbody>
-        <c:forEach var="categoriadocumento" items="${categoriadocumenti}">
+        <c:forEach var="categoria_documento" items="${categoriadocumenti}">
           <tr>
-            <td><c:out value="${contact.categoriadocumento}"/></td>
+            <td><c:out value="${contact.categoria_documento}"/></td>
             <td><c:out value="${contact.descrizione}"/></td>
-            <td><a href="/categoriadocumenti/get?id=<c:out value="${contact.id}"/>&azione=update">Modifica</a></td>
-            <td><a href="/categoriadocumenti/delete?id=<c:out value="${contact.id}"/>&azione=delete">Cancella</a></td>
+            <td><a href="/categoriadocumenti/get?id=<c:out value="${contact.id}"/><&azione="update">Modifica</a></td>
+            <td><a href="/categoriadocumenti/delete?id=<c:out value="${contact.id}"/><&azione="delete">Cancella</a></td>
           </tr>
         </c:forEach>
       </tbody>
