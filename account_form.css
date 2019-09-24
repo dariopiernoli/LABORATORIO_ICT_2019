@@ -1,0 +1,80 @@
+@charset "UTF-8";
+#title{
+                
+                line-height:4;
+            }
+            
+            
+            
+            #all {
+                
+                font-family: sans-serif;
+                color:grey;
+                padding:5px;
+                margin-bottom: auto;
+            
+             }
+           
+            #submit {
+                
+              float:right;
+                border-color: greenyellow;
+                color:grey;
+                
+            }
+            
+            #Home{
+                
+                float:left;
+                border-color:red;
+                
+            }
+           
+            
+            #form{
+                
+                background-color: ghostwhite;
+                padding-top: 10px;
+                padding-bottom: 80px;
+                margin:0px;
+                height: 150px;
+                text-align: center;
+    
+            }
+            
+            .button{
+                
+                background-color:ghostwhite;
+                font-size: 20px;
+                border-style:inset;
+                border-width: 7px;
+                
+            }
+            
+            a{
+                
+                text-decoration: none;
+                color:grey;
+            }
+            
+            
+            
+            a:hover{
+                
+                text-decoration: underline;
+                color:red;
+            }
+            
+            #img{
+                
+                position: relative;
+                top:14px;
+                left: 15px;
+            }
+           
+            .asterix::before {
+                
+                content: "*";
+                color:red;
+                
+            }
