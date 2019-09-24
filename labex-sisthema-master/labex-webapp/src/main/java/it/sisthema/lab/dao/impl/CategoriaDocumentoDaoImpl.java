@@ -21,13 +21,13 @@ public class CategoriaDocumentoDaoImpl implements CategoriaDocumentoDao {
 
 	    @Override
 	    public int save(CategoriaDocumento documento) {
-	        return jdbcTemplate.update("insert into documents (categoria, descrizione) values(?,?)", documento.getCategoria(),
+	        return jdbcTemplate.update("insert into documents (categoria_documento, descrizione) values(?,?)", documento.getCategoria(),
 	                documento.getDescrizione());
 	    }
 
 	    @Override
 	    public int update(CategoriaDocumento documento) {
-	        return jdbcTemplate.update("update documents set categoria = ?, descrizione = ?",
+	        return jdbcTemplate.update("update documents set categoria_documento = ?, descrizione = ?",
 	        		documento.getCategoria(), documento.getDescrizione());
 	    }
 
@@ -38,13 +38,13 @@ public class CategoriaDocumentoDaoImpl implements CategoriaDocumentoDao {
 
 	    @Override
 	    public List<CategoriaDocumento> findAll() {
-	        return jdbcTemplate.query("select * from documents", (rs, rowNum) -> new CategoriaDocumento(rs.getLong("id"), rs.getString("categoria"), rs.getString("descrizione")));
+	        return jdbcTemplate.query("select * from documents", (rs, rowNum) -> new CategoriaDocumento(rs.getLong("id"), rs.getString("categoria_documento"), rs.getString("descrizione")));
 	    }
 
 	    @Override
 	    public CategoriaDocumento findById(Long id) {
 	        return (CategoriaDocumento) jdbcTemplate.queryForObject("select * from documents where id = ?", new Object[] { id },
-	                (rs, rowNum) -> new CategoriaDocumento(rs.getLong("id"), rs.getString("categoria"), rs.getString("descrizione")));
+	                (rs, rowNum) -> new CategoriaDocumento(rs.getLong("id"), rs.getString("categoria_documento"), rs.getString("descrizione")));
 	    }
 
 

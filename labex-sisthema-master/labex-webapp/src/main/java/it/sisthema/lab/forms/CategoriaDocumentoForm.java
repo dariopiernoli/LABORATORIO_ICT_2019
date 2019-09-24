@@ -10,7 +10,7 @@ public class CategoriaDocumentoForm implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
-	private String categoria;
+	private String categoria_documento;
 	private String descrizione;
 	
 	public static long getSerialversionuid() {
@@ -22,7 +22,7 @@ public class CategoriaDocumentoForm implements Serializable {
 	}
 
 	public String getCategoria() {
-		return categoria;
+		return categoria_documento;
 	}
 
 	public String getDescrizione() {
@@ -34,7 +34,7 @@ public class CategoriaDocumentoForm implements Serializable {
 	}
 
 	public void setCategoria(String categoria) {
-		this.categoria = categoria;
+		this.categoria_documento = categoria;
 	}
 
 	public void setDescrizione(String descrizione) {

@@ -10,19 +10,19 @@ public class CategoriaDocumento implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
-	private String categoria;
+	private String categoria_documento;
 	private String descrizione;
 	
-	public CategoriaDocumento(Long id, String categoria, String descrizione) {
+	public CategoriaDocumento(Long id, String categoria_documento, String descrizione) {
 		super();
 		this.id = id;
-		this.categoria = categoria;
+		this.categoria_documento = categoria_documento;
 		this.descrizione = descrizione;
 	}
 
-	public CategoriaDocumento(String categoria, String descrizione) {
+	public CategoriaDocumento(String categoria_documento, String descrizione) {
 		super();
-		this.categoria = categoria;
+		this.categoria_documento = categoria_documento;
 		this.descrizione = descrizione;
 	}
 
@@ -39,7 +39,7 @@ public class CategoriaDocumento implements Serializable {
 	}
 
 	public String getCategoria() {
-		return categoria;
+		return categoria_documento;
 	}
 
 	public String getDescrizione() {
@@ -50,8 +50,8 @@ public class CategoriaDocumento implements Serializable {
 		this.id = id;
 	}
 
-	public void setCategoria(String categoria) {
-		this.categoria = categoria;
+	public void setCategoria(String categoria_documento) {
+		this.categoria_documento = categoria_documento;
 	}
 
 	public void setDescrizione(String descrizione) {
